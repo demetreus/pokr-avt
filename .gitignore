@@ -1,1 +1,3 @@
-.idea/
+/.idea
+/src/vendor/*
+!/src/vendor/Framework/
