@@ -52,16 +52,16 @@ class ErrorHandler
      * @param $errline
      * @param $responce
      */
-    protected function displayError($errno, $errstr, $errfile, $errline, $responce)
+    protected function displayError($errno, $errstr, $errfile, $errline, $response)
     {
-        http_response_code($responce);
+        http_response_code($response);
 
-        if ($responce == 404 && !DEBUG) {
-            require WWW . "/errors/{$responce}.html";
+        if ($response == 404 && !DEBUG) {
+            require WWW . "/errors/{$response}.html";
             die;
         }
-        elseif ($responce == 500 && !DEBUG) {
-            require WWW . "/errors/{$responce}.html";
+        elseif ($response == 500 && !DEBUG) {
+            require WWW . "/errors/{$response}.html";
             die;
         }
 
