@@ -2,7 +2,7 @@
 /**
  * Global application configuration
  *
- * @author Demetreus this.deetreus@gmail.com
+ * @author Demetreus this.demetreus@gmail.com
  */
 
 /**
