@@ -55,6 +55,7 @@ class ErrorHandler
     protected function displayError($errno, $errstr, $errfile, $errline, $responce)
     {
         http_response_code($responce);
+
         if ($responce == 404 && !DEBUG) {
             require WWW . "/errors/{$responce}.html";
             die;
