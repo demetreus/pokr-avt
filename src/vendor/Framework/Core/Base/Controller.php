@@ -22,6 +22,10 @@ abstract class Controller
                     'keywords' => ''];
     public $data = [];
 
+    /**
+     * Controller constructor.
+     * @param $route
+     */
     public function __construct($route)
     {
         $this->route = $route;
@@ -31,6 +35,11 @@ abstract class Controller
         $this->prefix = $route['prefix'];
     }
 
+    /**
+     * Method getView()
+     *
+     * Gets the view object and calls the render() method
+     */
     public function getView()
     {
         $viewObject = new View($this->route, $this->layout, $this->view, $this->meta);
