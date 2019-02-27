@@ -2,7 +2,6 @@
 
 namespace Framework;
 
-
 /**
  * Class App
  * @package Framework
@@ -26,6 +25,8 @@ class App
         self::$app = Registry::instance();
 
         $this->getParams();
+
+        new ErrorHandler();
     }
 
     /**

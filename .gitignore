@@ -1,3 +1,5 @@
 /.idea
 /src/vendor/*
 !/src/vendor/Framework/
+/src/tmp
+*log
