@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use Framework\App;
+use Framework\Cache;
 
 /**
  * Class MainController
@@ -20,7 +21,16 @@ class MainController extends AppController
 
         $name = 'John Doe';
         $age = 25;
-        $options = ['X', 'Y'];
+        $options = ['X', 'Y', 'Z'];
+        $cache = Cache::instance();
+        //$cache->set('testCache', $options);
+        //$cache->delete('testCache');
+        $data = $cache->get('testCache');
+        if (!$data) {
+            $cache->set('testCache', $options);
+        }
+        debug($data);
+
         $this->set(compact('name', 'age', 'options', 'posts'));
     }
 }

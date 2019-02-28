@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <title></title>
     <?=$this->getMeta();?>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
@@ -13,8 +12,8 @@
 
     <?php
     // Debugging for database queries
-    //$logs = \R::getDatabaseAdapter()->getDatabase()->getLogger();
-    //debug($logs->grep('SELECT'));
+    $logs = \R::getDatabaseAdapter()->getDatabase()->getLogger();
+    debug($logs->grep('SELECT'));
     ?>
 </body>
 </html>
