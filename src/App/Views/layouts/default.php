@@ -12,8 +12,10 @@
 
     <?php
     // Debugging for database queries
+    /*
     $logs = \R::getDatabaseAdapter()->getDatabase()->getLogger();
     debug($logs->grep('SELECT'));
+    */
     ?>
 </body>
 </html>

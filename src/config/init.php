@@ -102,7 +102,7 @@ define("CONFIG", ROOT . '/config');
  *
  * @return string define(LAYOUT);
  */
-define("LAYOUT", 'default');
+define("LAYOUT", 'pokrasimAvto');
 
 /**
  * Constant PATH
