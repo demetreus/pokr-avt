@@ -16,10 +16,10 @@ abstract class Controller
     public $view;
     public $layout;
     public $prefix;
-    public $meta = ['title' => '',
-                    'author' => '',
+    public $meta = ['title'       => '',
+                    'author'      => '',
                     'description' => '',
-                    'keywords' => ''];
+                    'keywords'    => ''];
     public $data = [];
 
     /**
