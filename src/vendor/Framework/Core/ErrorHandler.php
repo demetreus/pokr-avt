@@ -56,19 +56,12 @@ class ErrorHandler
     {
         http_response_code($response);
 
-        if ($response == 404 && !DEBUG) {
+        if ($response == 404 && !DEBUG || $response == 500 && !DEBUG) {
             require WWW . "/errors/{$response}.html";
             die;
         }
-        elseif ($response == 500 && !DEBUG) {
-            require WWW . "/errors/{$response}.html";
-            die;
-        }
-
-        if (DEBUG) {
-            require WWW . '/errors/develop.mode.php';
-        } else {
-            require WWW . '/errors/make.mode.php';
+        elseif (DEBUG && $response != '') {
+            require WWW . '/errors/debug_mode.php';
         }
 
         die;

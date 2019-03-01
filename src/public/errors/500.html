@@ -1,11 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>Code 500</title>
+    <title>Внутренняя ошибка сервера 500</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/bootstrap.v4.3.1/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+
+    <style>
+        .error404_wrapper {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .error404_wrapper h1 {
+            font-weight: bold;
+            font-size: 5em;
+            border: none;
+        }
+
+        .error404_wrapper h1 i.fas {
+            color: #c82333;
+        }
+
+        .error404_wrapper p {
+            width: 100%;
+            min-width: 300px;
+            max-width: 650px;
+            color: #2c3e50;
+            background: #2F8CCA;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 2.5em 0.2em rgba(204,204,204,0.5);
+        }
+
+        .error404_wrapper .btn {
+            color: #2c3e50;
+            background: #2F8CCA;
+            margin: 5px 0 0;
+            border: none;
+        }
+    </style>
 </head>
 <body>
-    <h1>Code 500<br>Internal Server Error</h1>
-    <a href="/">Back to home</a>
+
+<div class="container shadow-wrapper">
+
+    <div class="row">
+
+        <div class="error404_wrapper">
+            <h1>Ошибка 500 <i class="fas fa-exclamation-circle"></i></h1>
+            <p>Приносим свои извинения, это внутренняя ошибка сервера.<br>
+                Мы уже знаем об этом и делаем все чтобы ее исправить.<br>
+                Возвращайтесь на сайт в скором времени.
+            </p>
+        </div>
+
+    </div>
+
+</div>
+
 </body>
 </html>

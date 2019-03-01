@@ -77,15 +77,13 @@
 
     <div class="row">
 
-        <main class="col-sm-12 col-md-12 col-lg-8 col-xl-8">
-
         <!-- / Start Content / -->
+        <main class="col-sm-12 col-md-12 col-lg-8 col-xl-8">
 
             <?=$content;?>
 
-        <!-- / End Content / -->
-
         </main>
+        <!-- / End Content / -->
 
         <aside class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
 
@@ -110,17 +108,17 @@
             <div class="wrapper">
                 <div class="widget__aside" id="reviews">
                     <h3>Отзывы клиентов</h3>
-                    <!-- <div class="no-reviews">
+                    <div class="no-reviews">
                         <p>Отзывов пока нет<br><em>Будьте первым, кто оставит отзыв</em></p>
-                    </div> -->
-                    <div class="review">
-                        <h4><i class="far fa-user-circle"></i> Иван Иванович</h4>
-                        <p>Текст комментария клиента...</p>
                     </div>
-                    <div class="review">
-                        <h4><i class="far fa-user-circle"></i> <a href="#">Николай Николаевич</a></h4>
-                        <p>Текст комментария клиента...</p>
-                    </div>
+<!--                    <div class="review">-->
+<!--                        <h4><i class="far fa-user-circle"></i> Иван Иванович</h4>-->
+<!--                        <p>Текст комментария клиента...</p>-->
+<!--                    </div>-->
+<!--                    <div class="review">-->
+<!--                        <h4><i class="far fa-user-circle"></i> <a href="#">Николай Николаевич</a></h4>-->
+<!--                        <p>Текст комментария клиента...</p>-->
+<!--                    </div>-->
                     <button type="submit" class="btn"></button>
                 </div>
             </div>
