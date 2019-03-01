@@ -1,6 +1,4 @@
- // $(document).on('ready', function() {
-
- $(document).ready(function(){
+$(document).ready(function(){
 
     // Determine the status of the "reviews" widget
     if ($("div").hasClass("no-reviews")){
@@ -17,7 +15,7 @@
     }
 
     $('button[id="more-recall"]').on('click', function(){
-        location.href = "reviews.html";
+        location.href = "/reviews";
     });
 
     // Slick.js plugin settings

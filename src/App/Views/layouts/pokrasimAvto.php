@@ -9,12 +9,12 @@
 
 
     <!-- Additional CSS libraries -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="/css/slick.css">
     <link rel="stylesheet" type="text/css" href="/css/slick-theme.css">
 
     <!-- Bootstrap framework -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/bootstrap.v4.3.1/bootstrap.min.css">
 
     <!-- Main style file -->
     <link rel="stylesheet" type="text/css" href="/css/main.css">
@@ -79,7 +79,11 @@
 
         <main class="col-sm-12 col-md-12 col-lg-8 col-xl-8">
 
+        <!-- / Start Content / -->
+
             <?=$content;?>
+
+        <!-- / End Content / -->
 
         </main>
 
@@ -229,11 +233,10 @@
     </div>
 </div>
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<!-- <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script> -->
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script type="text/javascript" src="/javascript/slick.min.js"></script>
+<script src="/javascript/jQuery/jquery-3.3.1.min.js"></script>
+<script src="/javascript/bootstrap.v4.3.1/bootstrap.min.js"></script>
+<script src="/javascript/popper.v1.14.7/popper.min.js"></script>
+<script src="/javascript/slick.min.js"></script>
 <script src="/javascript/main.js"></script>
 
 </body>
